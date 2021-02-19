@@ -21,6 +21,7 @@ class MainActivity_Dice : AppCompatActivity() {
             finish()
         }
     }
+
     //주사위 굴리고, 그 결과를 스크린에 업데이터함
     private fun rollDice() {
         //새로운 6면 주사위를 만들고 굴리기
@@ -30,6 +31,16 @@ class MainActivity_Dice : AppCompatActivity() {
         //주사위굴린 화면을 업데이트함함
        val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
+
+        val resultPrint: TextView = findViewById(R.id.tv_result)
+        when (resultTextView) {
+            1 -> resultPrint.setText("So sorry! you rolled a 1. Try again!")
+            2 -> resultPrint.setText("Sadly, you rolled a 2. Try again!")
+            3 -> resultPrint.setText("Unfortunately, you rolled a 3. Try again!")
+            4 -> resultPrint.setText("you won!")
+            5 -> resultPrint.setText("Don`t cry! you rolled a 5. Try again!")
+            6 -> resultPrint.setText("Apologies! you rolled a 6. Try again!")
+        }
     }
 }
 
@@ -38,17 +49,5 @@ class Dice(val numSides: Int) {
 
     fun roll(): Int {
         return (1..numSides).random()
-    }
-}
-
-fun main () {
-    val num = 4
-    if (num > 4) {
-        println("The variable is greater than 4")
-    } else if (num == 4) {
-        println("The variable is equal to 4")
-    } else {
-        println("The variable is less than 4")
-        }
     }
 }
