@@ -43,7 +43,11 @@ class MainActivity_Dice : AppCompatActivity() {
 
         diceImage.setImageResource(drawableResource)
 
-        val resultPrint: TextView = findViewById(R.id.tv_result)
+        //스크린리더설명 더하기
+        diceImage.contentDescription = diceRoll.toString()
+
+        //tv_result 값 업데이트
+        val resultPrint : TextView = findViewById(R.id.tv_result)
 
         when (diceRoll) {
             1 -> resultPrint.setText("So sorry! you rolled a 1. Try again!")
