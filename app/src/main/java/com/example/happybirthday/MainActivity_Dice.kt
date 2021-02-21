@@ -16,6 +16,11 @@ class MainActivity_Dice : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener { rollDice() }
 
+        //처음화면에 임의의 주사위 이미지와 기본 텍스트 표시함
+        rollDice()
+        val defaultPrint : TextView = findViewById(R.id.tv_result)
+        defaultPrint.setText("Roll the dice!")
+
         //되돌아가기 버튼
         val back: Button = findViewById(R.id.btnBack)
         back.setOnClickListener {
