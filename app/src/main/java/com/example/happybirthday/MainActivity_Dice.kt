@@ -3,6 +3,7 @@ package com.example.happybirthday
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity_Dice : AppCompatActivity() {
@@ -29,17 +30,28 @@ class MainActivity_Dice : AppCompatActivity() {
         val diceRoll = dice.roll()
 
         //주사위굴린 화면을 업데이트함함
-       val resultTextView: TextView = findViewById(R.id.textView)
-        resultTextView.text = diceRoll.toString()
+        val diceImage: ImageView = findViewById(R.id.imageView)
+
+        val drawableResource = when (diceRoll) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+
+        diceImage.setImageResource(drawableResource)
 
         val resultPrint: TextView = findViewById(R.id.tv_result)
-        when (resultTextView) {
+
+        when (diceRoll) {
             1 -> resultPrint.setText("So sorry! you rolled a 1. Try again!")
             2 -> resultPrint.setText("Sadly, you rolled a 2. Try again!")
-            3 -> resultPrint.setText("Unfortunately, you rolled a 3. Try again!")
-            4 -> resultPrint.setText("you won!")
-            5 -> resultPrint.setText("Don`t cry! you rolled a 5. Try again!")
-            6 -> resultPrint.setText("Apologies! you rolled a 6. Try again!")
+            3 -> resultPrint.setText("Unfortunately, you rolled a 3.\n Try again!")
+            4 -> resultPrint.setText("Don`t cry! you rolled a 4. Try again!")
+            5 -> resultPrint.setText("Apologies! you rolled a 5. Try again!")
+            6 -> resultPrint.setText("you won! you rolled a 6.")
         }
     }
 }
