@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.happybirthday">
+    package="com.example.AndroidTutorial_App">
 
     <application
         android:allowBackup="true"
@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
-        <activity android:name=".MainActivity_Dice"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.AndroidTutorial_App.MainActivity_Dice"></activity>
+        <activity android:name="com.example.AndroidTutorial_App.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

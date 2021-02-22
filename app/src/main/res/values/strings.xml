@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Happy Birthday</string>
+    <string name="app_name">AndroidTutorial_App</string>
     <string name="happy_birthday_text">Happy Birthday, shine!</string>
     <string name="from_text">From Happy.</string>
     <string name="roll">Roll</string>
-    <string name="screenTransition">Button</string>
+    <string name="btnMoveToDice">To dice</string>
     <string name="back">back</string>
     <string name="roll_the_dice">Roll the dice!</string>
 </resources>
