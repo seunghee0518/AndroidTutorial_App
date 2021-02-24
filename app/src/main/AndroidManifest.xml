@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
-        <activity android:name="com.example.AndroidTutorial_App.MainActivity_Dice"></activity>
-        <activity android:name="com.example.AndroidTutorial_App.MainActivity">
+        <activity android:name=".MainActivity_TipCalculator"></activity>
+        <activity android:name=".MainActivity_Dice" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
