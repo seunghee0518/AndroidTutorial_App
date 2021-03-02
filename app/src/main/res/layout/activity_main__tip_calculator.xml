@@ -9,7 +9,7 @@
     tools:context=".MainActivity_TipCalculator">
 
     <EditText
-        android:id="@+id/pt_costService"
+        android:id="@+id/ptCostService"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -20,72 +20,74 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_serviceQuestion"
+        android:id="@+id/tvServiceQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/how_was_the_service"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pt_costService" />
+        app:layout_constraintTop_toBottomOf="@id/ptCostService" />
 
     <RadioGroup
-        android:id="@+id/rg_tipOptions"
-        android:checkedButton="@id/rb_optionTwentyPercent"
+        android:id="@+id/rgTipOptions"
+        android:checkedButton="@id/rbOptionTwentyPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_serviceQuestion">
-
-        <!--add RadioButtons here -->
+        app:layout_constraintTop_toBottomOf="@id/tvServiceQuestion"
 
         <RadioButton
-            android:id="@+id/rb_optionTwentyPercent"
+            android:id="@+id/rbOptionTwentyPercent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/amazing_20"/>
+            android:text="@string/amazing_20"
+            tools:ignore="MissingConstraints" />
 
         <RadioButton
-            android:id="@+id/rb_optionEighteenPercent"
+            android:id="@+id/rbOptionEighteenPercent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/good_18"/>
+            android:text="@string/good_18"
+            tools:ignore="MissingConstraints" />
 
         <RadioButton
-            android:id="@+id/rb_optionFifteenPercent"
+            android:id="@+id/rbOptionFifteenPercent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ok_15"/>
+            android:text="@string/ok_15"
+            tools:ignore="MissingConstraints" />
     </RadioGroup>
 
     <Switch
-        android:id="@+id/sw_roundUp"
+        android:id="@+id/swRoundUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:checked="true"
         android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rg_tipOptions" />
+        app:layout_constraintTop_toBottomOf="@id/rgTipOptions" />
 
     <Button
-        android:id="@+id/btn_calculateButton"
+        android:id="@+id/btnCalculateButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/calculate"
-        app:layout_constraintTop_toBottomOf="@id/sw_roundUp"
+        app:layout_constraintTop_toBottomOf="@id/swRoundUp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_tipResult"
+        android:id="@+id/tvTipResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_calculateButton"
-        android:text="@string/tip_amount" />
+        app:layout_constraintTop_toBottomOf="@id/btnCalculateButton"
+        tools:text = "Tip Amount : %10"/>
+
 
     <Button
-        android:id="@+id/btn_back"
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/backToBirthday"
