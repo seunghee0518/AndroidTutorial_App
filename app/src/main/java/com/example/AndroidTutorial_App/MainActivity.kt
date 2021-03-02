@@ -12,9 +12,13 @@ class MainActivity : AppCompatActivity() {
 
         val secondIntent = Intent(this, MainActivity_Dice::class.java)
 
-        val move: Button = findViewById(R.id.btnMoveToDice)
-        move.setOnClickListener{
+        val moveToDice: Button = findViewById(R.id.btnMoveToDice)
+        moveToDice.setOnClickListener{
             startActivity(secondIntent)
         }
+
+        val moveToCalculate: Button = findViewById(R.id.btnMoveToTips)
+        moveToCalculate.setOnClickListener{
+            startActivity(MainActivity_TipCalculator)
     }
 }
