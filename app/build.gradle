@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    //보기 바인딩 사용 활성화
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {

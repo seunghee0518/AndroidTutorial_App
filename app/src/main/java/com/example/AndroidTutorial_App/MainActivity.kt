@@ -10,15 +10,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val secondIntent = Intent(this, MainActivity_Dice::class.java)
+        val IntentToDice = Intent(this, MainActivity_Dice::class.java)
 
         val moveToDice: Button = findViewById(R.id.btnMoveToDice)
         moveToDice.setOnClickListener{
-            startActivity(secondIntent)
+            startActivity(IntentToDice)
         }
+
+        val IntentToCalculate = Intent(this, MainActivity_TipCalculator::class.java)
 
         val moveToCalculate: Button = findViewById(R.id.btnMoveToTips)
         moveToCalculate.setOnClickListener{
-            startActivity(MainActivity_TipCalculator)
+            startActivity(IntentToCalculate)
+        }
     }
 }

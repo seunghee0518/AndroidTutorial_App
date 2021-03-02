@@ -1,5 +1,6 @@
 package com.example.AndroidTutorial_App
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -22,9 +23,11 @@ class MainActivity_Dice : AppCompatActivity() {
         defaultPrint.setText("Roll the dice!")
 
         //되돌아가기 버튼
+        val BackToBirthday = Intent(this, MainActivity::class.java)
+
         val back: Button = findViewById(R.id.btnBack)
-        back.setOnClickListener {
-            finish()
+        back.setOnClickListener{
+            startActivity(BackToBirthday)
         }
     }
 
