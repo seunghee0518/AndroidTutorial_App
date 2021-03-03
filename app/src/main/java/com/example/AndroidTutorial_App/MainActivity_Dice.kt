@@ -28,6 +28,7 @@ class MainActivity_Dice : AppCompatActivity() {
         val back: Button = findViewById(R.id.btnBack)
         back.setOnClickListener{
             startActivity(BackToBirthday)
+            finish()
         }
     }
 
