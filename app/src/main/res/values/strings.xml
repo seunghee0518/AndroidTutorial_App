@@ -4,7 +4,8 @@
     <string name="from_text">From Happy.</string>
     <string name="roll">Roll</string>
     <string name="btnMoveToDice">To dice</string>
-    <string name="back">back</string>
+
+    <string name="dice_back">back</string>
     <string name="roll_the_dice">Roll the dice!</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="how_was_the_service">How was the service?</string>
@@ -14,5 +15,15 @@
     <string name="calculate">Calculate</string>
     <string name="tip_amount">Tip Amount: %s</string>
     <string name="round_up_tip">Round up tip?</string>
-    <string name="backToBirthday">Back</string>
+
+    <string name="calculator_back">Back</string>
+    <string name="to_calculate">To calculate</string>
+    <string name="to_tiptime">To TipTime</string>
+
+    <string name="timTime_back">Back</string>
+    <string name="primary_color">Primary color</string>
+    <string name="button">Button</string>
+    <string name="secondary_color">Secondary color</string>
+    <string name="email_icon">email icon</string>
+
 </resources>

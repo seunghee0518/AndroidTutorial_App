@@ -42,10 +42,9 @@ class MainActivity_TipCalculator : AppCompatActivity() {
         binding.btnCalculateButton.setOnClickListener { calculateTip() }
 
         //되돌아가기 버튼
-        val BackToBirthday = Intent(this, MainActivity::class.java)
-        val Back: Button = findViewById(R.id.btnBack)
-        Back.setOnClickListener {
-            startActivity(BackToBirthday)
+        val BackToBirthday: Button = findViewById(R.id.btnBack)
+            BackToBirthday.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

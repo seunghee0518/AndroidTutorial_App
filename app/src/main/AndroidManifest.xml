@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
+        <activity android:name=".MainActivity_TipTime"></activity>
         <activity android:name=".MainActivity_TipCalculator" />
         <activity android:name=".MainActivity_Dice" />
         <activity android:name=".MainActivity">

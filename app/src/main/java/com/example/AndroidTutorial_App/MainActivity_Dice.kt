@@ -23,11 +23,9 @@ class MainActivity_Dice : AppCompatActivity() {
         defaultPrint.setText("Roll the dice!")
 
         //되돌아가기 버튼
-        val BackToBirthday = Intent(this, MainActivity::class.java)
-
-        val back: Button = findViewById(R.id.btnBack)
-        back.setOnClickListener{
-            startActivity(BackToBirthday)
+        val BackToBirthday: Button = findViewById(R.id.btnBack)
+            BackToBirthday.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }
