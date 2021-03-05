@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TipTime">
+        android:theme="@style/Theme.TipTime.Night">
         <activity android:name=".MainActivity_TipTime"></activity>
         <activity android:name=".MainActivity_TipCalculator" />
         <activity android:name=".MainActivity_Dice" />

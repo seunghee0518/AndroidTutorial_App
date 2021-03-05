@@ -25,6 +25,8 @@
         android:textAllCaps="true"
         android:textSize="12sp"
         android:style="@style/GreenText"/>
+        //android: textAppearance="@android:style/TextAppearance.Material.Headline"
+        //android: text = "This text is styled via textAppearance!"
 
     <Button
         android:layout_width="wrap_content"
