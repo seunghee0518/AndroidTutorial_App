@@ -23,7 +23,8 @@
         android:gravity="center_vertical"
         android:text="@string/primary_color"
         android:textAllCaps="true"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:style="@style/GreenText"/>
 
     <Button
         android:layout_width="wrap_content"
